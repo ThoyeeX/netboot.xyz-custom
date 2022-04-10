@@ -12,3 +12,9 @@ name from the Utilities menu (**Tools:** -> **Utilities** -> **netboot.xyz tools
 will cause a custom menu to appear in the main menu.
 
 If you are new to iPXE scripting, take a look at `custom.ipxe.example` and build up from that.
+
+````
+#!ipxe
+dhcp
+chain --autofree https://boot.netboot.xyz
+````

@@ -9,7 +9,8 @@
 
 isset ${dhcp-server} && set ipparam ip=dhcp || set ipparam ip=${ip}::${gateway}:${netmask}:::none nameserver=${dns}
 set ipparam BOOTIF=${netX/mac} ${ipparam}
-
+clear openEuler_mirror
+set openEuler_mirror https://repo.openeuler.org
 goto ${menu} ||
 
 :openEuler
